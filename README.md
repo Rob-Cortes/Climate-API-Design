@@ -38,15 +38,19 @@ In this section, we design a Flask API based on the queries above.
 First, we list all the available routes on the homepage. The routes do the following:
 
 /api/v1.0/precipitation
+
 Converts the query results from the precipitation analysis to a dictionary using date as the key and prcp as the value. Returns a JSON representation of the dictionary.
 
 /api/v1.0/stations
+
 Returns a JSON list of stations.
 
 /api/v1.0/tobs
+
 Queries the dates and temperature observations of the most active station for the previous year of data. Temperature observations returned as a JSON list.
 
 /api/v1.0/<start> and /api/v1.0/<start>/<end>
+
 Returns a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
 For a specified start, calculates TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
 For a specified start date and end date, calculates TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.

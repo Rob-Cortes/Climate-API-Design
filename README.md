@@ -1,4 +1,4 @@
-# No-SQL Investigation of UK Food Standards
+# Climate API Design
 This is a climate analysis of Honolulu in Python and SQLAlchemy, along with a Flask API for accessing the climate data. 
 
 ### Set-Up
